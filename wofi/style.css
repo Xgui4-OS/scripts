@@ -1,0 +1,16 @@
+window {
+    background : black,
+}
+
+#text {
+    color : white
+}
+
+
+#entry:selected{
+    background : purple
+}
+
+#input {
+    background : black,
+}

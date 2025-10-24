@@ -1,12 +1,14 @@
 #!/usr/bin/bash
 
+echo "HyperArch Dotfiles Installer"
+
 # Variables
 RED="\e[31m"
 ENDCOLOR="\e[0m"
 
 echo "This bash script is experimental and a work-in-progress !"
 echo "Important : this bash script is made for EndeavourOS in mind as yay is not availaible by default in Arch."
-read -p 'Do you want to update the system before installing the apps (Recommended) (Y/N) ?' confirm
+read -r -p 'Do you want to update the system before installing the apps (Recommended) (Y/N) ?' confirm
 
 # Update the system (recommended)
 if [[ $confirm == "Y" || $confirm == "y" ]]; then
