@@ -16,8 +16,8 @@ exec_always --no-startup-id picom &
 # run dunst
 exec_always --no-startup-id dunst &
 
-# set wallpaper with fed
-exec_always feh --bg-fill /home/xgui4/Images/wallpaper/wallpaper.jpeg
+# set wallpaper with feh
+exec_always feh --bg-fill ~/.config/wallpapers/wallpaper.jpeg
 
 # launch polybar
 exec_always --no-startup-id killall -q

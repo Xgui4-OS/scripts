@@ -7,6 +7,8 @@ hyprpolkitagent
 waybar 
 gnome-keyring 
 sawync 
+dunst
+feh
 pipewire 
 wireplumber 
 qt5-wayland 
@@ -21,3 +23,10 @@ kitty
 light
 xf86-input-libinput
 wofi
+rofi
+i3 
+polybar
+blueman
+xss-lock 
+network-manager-applet
+pavucontrol
