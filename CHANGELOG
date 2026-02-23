@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Feb 22 Update
+
+- minor update to starhip and add cmake
+
 ## Feb 20 Update
 
 - backport windows rule from linux

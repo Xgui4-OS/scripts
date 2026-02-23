@@ -12,6 +12,7 @@ $git_branch\
 $git_status\
 [](fg:yellow bg:green)\
 $c\
+$cmake\
 $dotnet\
 $cpp\
 $rust\
@@ -122,7 +123,12 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 [c]
 disabled = false
 symbol = " "
-detect_files = ["Makefile", "makefile", ".c"]
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[cmake]
+disabled = false
+symbol = " "
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
