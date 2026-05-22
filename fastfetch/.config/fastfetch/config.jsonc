@@ -24,6 +24,10 @@
             "keyColor": "magenta"
         },
         {
+            "type": "initsystem",
+            "keyColor": "magenta"
+        },
+        {
             "type": "kernel",
             "keyColor": "blue"
         },
@@ -47,12 +51,12 @@
             "type": "Theme",
             "keyColor": "38;2;252;148;3"
         },
-	{
-   	    "type": "command",
-            "key": "Dotfiles",
-   	    "text": "cat ~/.dotfiles/VERSION",
-	    "keyColor": "38;2;252;148;3"
-	},
+        {
+            "type": "command",
+                "key": "Dotfiles",
+            "text": "cat ~/.dotfiles/VERSION",
+            "keyColor": "38;2;252;148;3"
+        },
         {
             "type": "de",
             "keyColor": "38;2;252;148;3"

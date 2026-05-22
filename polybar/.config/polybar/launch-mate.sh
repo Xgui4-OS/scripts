@@ -1,4 +1,7 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env sh
+
+export POLYBAR_BAT=$(ls -1 /sys/class/power_supply/ | grep -E '^BAT' | head -n 1)
+export POLYBAR_ADAPTER=$(ls -1 /sys/class/power_supply/ | grep -E '^AD|^AC' | head -n 1)
 
 # Terminate already running bar instances
 killall -q polybar

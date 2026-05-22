@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Porting from Linux (25 February)
+
+- Backported my linux config to FreeBSD
+  - Added some alias for better shell experiment (some are not availaible on FreeBSD so they were not added)
+  - updated picom and startship to the updated linux config version
+  - updated fastfetch
+  - added a new wallpaper 
+  - ported the new polybar to bsd
+- minor bash and fish update to make more sense to bsd
+
 ## Feb 22 Update
 
 - minor update to starhip and add cmake

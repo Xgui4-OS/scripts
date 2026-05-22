@@ -10,8 +10,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias fastfetch-image='fastfetch -c ~/.config/fastfetch/config-image.jsonc'
-alias i-use-arch-btw='fastfetch -c ~/.config/fastfetch/config-image.jsonc --logo arch'
-alias wkill='hyprctl kill'
+alias i-use-ghostbsd-btw="fastfetch -c ~/.dotfiles/fastfetch/.config//fastfetch/config.jsonc --logo ghostbsd"
 alias neofetch='fastfetch -c neofetch'
 
 current_tty=$(tty)

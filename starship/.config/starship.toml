@@ -12,11 +12,10 @@ $git_branch\
 $git_status\
 [](fg:yellow bg:green)\
 $c\
-$cmake\
 $dotnet\
 $cpp\
+$cmake\
 $rust\
-$zig\
 $golang\
 $nodejs\
 $php\
@@ -29,6 +28,8 @@ $lua\
 $python\
 $zig\
 $conda\
+$guix_shell\
+$nix_shell\
 [](fg:green bg:sapphire)\
 $shell\
 [](fg:sapphire bg:lavender)\
@@ -61,8 +62,9 @@ Android = ""
 FreeBSD = "󰣠"
 AOSC = ""
 EndeavourOS = ""
+NixOS=""
 Arch = "󰣇"
-Artix = "󰣇"
+Artix = ""
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
@@ -102,6 +104,15 @@ truncation_symbol = "…/"
 "Videos" = " "
 "Vidéos" = " "
 "develop" = " "
+"Projets" = " "
+".github" = " "
+"workflows" = " "
+".git" = " "
+"App" = "󰀻"
+"app" = "󰀻"
+"pkg" = "󰏖 "
+"packages" = "󰏖 "
+"applications" = "󰀻"
 
 [git_branch]
 disabled = false
@@ -123,6 +134,7 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 [c]
 disabled = false
 symbol = " "
+detect_files = ["Makefile", "makefile", ".c"]
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
@@ -135,7 +147,7 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 [dotnet]
 disabled = false
 symbol = ""
-detect_extensions = [ "csproj", "fsproj", "xproj", ".sln", ".sln" ]
+detect_extensions = [ ".csproj", ".fsproj", ".xproj", ".sln", ".sln" ]
 detect_files = ['global.json', 'project.json', 'Directory.Build.props', 'Directory.Build.targets', 'Packages.props']
 heuristic = false
 style = "bg:green"
@@ -144,7 +156,6 @@ format = '[[ $symbol( $version) (target $tfm ) ](fg:crust bg:green)]($style)'
 [cpp]
 disabled = false
 symbol = ""
-detect_files = ['cpp', 'cc', 'cxx', 'c++', 'hpp', 'hh', 'hxx', 'h++', 'tcc']
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
@@ -191,13 +202,13 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
 [lua]
 disabled = false
-symbol = ""
+symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
 [nim]
 disabled = false
-symbol = ""
+symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
@@ -223,9 +234,21 @@ format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
 [conda]
 disabled = false
 symbol = "  "
-style = "fg:crust bg:sapphire"
-format = '[$symbol$environment ]($style)'
+style = "fg:black bg:green"
+format = '[via [$symbol$environment]($style)'
 ignore_base = false
+
+[nix_shell]
+disabled = false
+symbol = "󱄅"
+style = "fg:black bg:green"
+format = '[via $symbol $state $name]($style)'
+
+[guix_shell]
+disabled = false
+symbol = ""
+style = "fg:black bg:green"
+format = '[via [$symbol $name]]($style)'
 
 [time]
 disabled = false
