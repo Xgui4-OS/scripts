@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Porting from Linux (25 February)
+## Porting from Linux (May 22)
 
 - Backported my linux config to FreeBSD
   - Added some alias for better shell experiment (some are not availaible on FreeBSD so they were not added)
