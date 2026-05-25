@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## May 25 Update
+
+- Update Polybar for better bsd compatibility
+- Update Modified exa to eza
+
 ## May 24
 
 - Update CoC and add the french version

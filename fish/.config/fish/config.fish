@@ -6,7 +6,7 @@ if status is-interactive
     alias neofetch="fastfetch -c neofetch"
     alias cat="bat"
     alias gcat="/bin/cat"
-    alias ls="exa --icons"
+    alias ls="eza --icons=always"
     alias gls="/bin/ls"
     alias grep="ugrep"
     alias ggrep="/usr/bin/grep"
